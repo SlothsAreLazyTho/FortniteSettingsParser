@@ -14,10 +14,6 @@ namespace FortniteSettingsParser.Object
 
         public Dictionary<string, UProperty> Properties { get; set; }
 
-        public readonly Stopwatch _stopWatch;
-
-        public readonly long _timeTaken;
-
         public FortniteSettings(UnrealBinaryReader stream)
         {
             Header = new(stream);
